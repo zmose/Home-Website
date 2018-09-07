@@ -5,33 +5,71 @@
   <meta charset="utf-8">
   <title>Home</title>
   <link href="_css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-</head>
-<div class="container">
+  <link rel="stylesheet" type="text/css" href="_css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="_css/edit.css">
 
-  <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="completeNavbar"
-      aria-label="Toggle navigation">
+  <script src="_js/bootstrap.min.js"></script>
+  <script src="_js/jquery-3.3.1.js"></script>
+  <script src="_js/popper.js"></script>
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg" style="background-color:#1acfde;">
+      <!-- Button for Nav bar when the page is collapsed -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="completeNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
       <div class="collapse navbar-collapse" id="#completeNavbar">
-
-
         <ul class="navbar-nav mr-auto list-inline text-right">
-          <li class="nav-item active list-inline-item"><a href="index.html">Home</a></li>
-          <li class="list-inline-item"><a href="about/index.html">About</a></li>
-          <li class="list-inline-item"><a href="contact/index.html">Clients</a></li>
-          <li class="list-inline-item"><a href="games/index.html">Games</a></li>
-          <li class="list-inline-item"><a href="index.html#footer">Contact</a></li>
+          <li class="nav-item active "><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item "><a class="nav-link" href="about/index.html">About</a></li>
+          <li class="nav-item "><a class="nav-link" href="contact/index.html">Clients</a></li>
+          <li class="nav-item "><a class="nav-link" href="games/index.html">Games</a></li>
+          <li class="nav-item "><a class="nav-link" href="index.html#footer">Contact</a></li>
         </ul>
 
       </div>
-      <br />
     </nav>
+    <!-- End Navigation Bar -->
+
+<i style="font-size: 0.5rem;" class="fas fa-stroopwafel fa-lg" ></i>
+    <!-- image -->
+    <img class="mx-auto d-block rounded-circle more-buffer fader" src="_images/headshot.jpg" alt="Zack Mosenson">
+    <!-- End image -->
+
+    <div class="links">
+      <ul>
+        <li>
+          <div class="grow">
+            <a href="http://github.com/zmose" target="_blank">
+              <i class="fa fa-github" >
+              </i>
+            </a></li>
+        </div>
+      </ul>
+    </div>
+
+    <span style="font-size: 3em; color: Tomato;">
+  <i class="fas fa-stroopwafel"></i>
+</span>
 
 
-    <footer id="footer">
+<i class="fab fa-accessible-icon"></i>
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer id="footer">
       <br />
       <h2>Contact Info</h2>
       <ul>
@@ -40,12 +78,24 @@
         <li><a href="mailto:zackmosenson@gmail.com">Email</a></li>
       </ul>
 
-    </footer>
-    <script src="_js/bootstrap.min.js"></script>
-    <script src="_js/jquery-3.3.1.js"></script>
-    <script src="_js/popper.js"></script>
+    </footer> -->
 
-</div>
+
+    <script>
+      function fade(selector, time) {
+        $(selector).delay(time).animate({
+          "opacity": 1
+        }, 700);
+      }
+
+      $(document).ready(function() {
+        fade(".fader", 200);
+      });
+    </script>
+
+
+
+  </div>
 </body>
 
 </html>
