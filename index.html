@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Home</title>
   <link href="_css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="_css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="_css/edit.css">
 
   <script src="_js/bootstrap.min.js"></script>
@@ -15,9 +15,9 @@
 
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color:#d8effe;">
     <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg" style="background-color:#1acfde;">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg" style="background-color:#d8effe;">
       <!-- Button for Nav bar when the page is collapsed -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="completeNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,29 +36,129 @@
     </nav>
     <!-- End Navigation Bar -->
 
-<i style="font-size: 0.5rem;" class="fas fa-stroopwafel fa-lg" ></i>
+    <i style="font-size: 0.5rem;" class="fas fa-stroopwafel fa-lg"></i>
     <!-- image -->
-    <img class="mx-auto d-block rounded-circle more-buffer fader" src="_images/headshot.jpg" alt="Zack Mosenson">
+    <div class="img-pusher">
+
+
+      <img class="mx-auto d-block rounded-circle more-buffer fader personalpadding" src="_images/headshot.jpg" alt="Zack Mosenson">
+
+    </div>
     <!-- End image -->
 
+
+    <h1 class="text-center fancy-text">Zack Mosenson</h1>
+
+    <h3 class="text-center">Computer Science Major and Web Developer at Penn State University.</h3>
+
+
+
+
+
+
+
+    <!-- Start link list -->
+
+    <!-- To continue the link list, copy/paste the pattern between the <li></li> tags.
+
+Then replace the 'hover-x' class inside the div with 'hover-y', where y
+is the link you want to add.
+
+Replace the link, make sure it works.
+
+Replace the 'fa-x' class iside the <i></i> with 'fa-y', where y is the icon
+that you want to add.
+
+Go to the bottom of the page and add the line:
+            'hovertext(".hover-yourhover", "<Your Link>");'
+
+You're done! -->
+
     <div class="links">
-      <ul>
-        <li>
-          <div class="grow">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div class="grow hover-github">
             <a href="http://github.com/zmose" target="_blank">
               <i class="fa fa-github" >
               </i>
-            </a></li>
-        </div>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-linkedin">
+            <a href="https://www.linkedin.com/in/zmose/" target="_blank">
+              <i class="fa fa-linkedin" >
+              </i>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-facebook">
+            <a href="https://www.facebook.com/profile.php?id=100008717740475" target="_blank">
+              <i class="fa fa-facebook" >
+              </i>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-instagram">
+            <a href="https://www.instagram.com/zackmosenson/" target="_blank">
+              <i class="fa fa-instagram" >
+              </i>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-twitter">
+            <a href="https://twitter.com/zackmosenson" target="_blank">
+              <i class="fa fa-twitter" >
+              </i>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-soundcloud">
+            <a href="https://soundcloud.com/zmose" target="_blank">
+              <i class="fa fa-soundcloud" >
+              </i>
+            </a>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="grow hover-resume">
+            <a href="Zack Mosenson's Resume.pdf" target="_blank">
+              <i class="fa fa-file" >
+              </i>
+            </a>
+          </div>
+        </li>
+
       </ul>
+    </div>     <!-- End list  -->
+
+<!-- Text Reader -->
+        <div class="text-center">
+          <h5 class="textread"></h5>
+
+        </div>
+        <!-- end text reader -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="personal-expand">
+
     </div>
 
-    <span style="font-size: 3em; color: Tomato;">
-  <i class="fas fa-stroopwafel"></i>
-</span>
 
-
-<i class="fab fa-accessible-icon"></i>
+  </div> <!-- End Container -->
 
 
 
@@ -68,8 +168,7 @@
 
 
 
-
-    <!-- <footer id="footer">
+  <!-- <footer id="footer">
       <br />
       <h2>Contact Info</h2>
       <ul>
@@ -81,17 +180,32 @@
     </footer> -->
 
 
-    <script>
-      function fade(selector, time) {
-        $(selector).delay(time).animate({
-          "opacity": 1
-        }, 700);
-      }
+  <script>
+    function fade(selector, time) {
+      $(selector).delay(time).animate({
+        "opacity": 1
+      }, 700);
+    }
 
-      $(document).ready(function() {
-        fade(".fader", 200);
+    function hovertext(icon, name) {
+      $(icon).hover(function() {
+        $(".textread").replaceWith("<h5 class='textread'>" + name + "</h5>");
       });
-    </script>
+    }
+
+    $(document).ready(function() {
+      fade(".fader", 200);
+
+
+      hovertext(".hover-github", "GitHub");
+      hovertext(".hover-linkedin", "LinkedIn");
+      hovertext(".hover-facebook", "Facebook");
+      hovertext(".hover-instagram", "Instagram");
+      hovertext(".hover-twitter", "Twitter");
+      hovertext(".hover-soundcloud", "SoundCloud");
+      hovertext(".hover-resume", "Resume")
+    });
+  </script>
 
 
 

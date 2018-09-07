@@ -2,7 +2,7 @@ body{
   padding-top:50px;
 }
 .more-buffer{
-  margin-top:150px;
+  border-top:150px;
 }
 
 .fader{
@@ -13,8 +13,20 @@ body{
   position: relative;
   text-align: center;
   color: black;
-  margin-left: -40px;
-  font-size: 30px;
+  /*margin-left: -40px;*/
+  font-size: 60px;
+}
+
+.personalpadding{
+  padding:50px;
+}
+
+.img-pusher{
+  padding-top:150px;
+}
+
+.personal-expand{
+  padding:50px;
 }
 
 .grow {
@@ -26,4 +38,8 @@ body{
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
+}
+
+.grow:hover{
+  transform: scale(1.2);
 }
