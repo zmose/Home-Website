@@ -10,6 +10,7 @@
 <!-- online files -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- local files -->
@@ -31,22 +32,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-      <div class="collapse navbar-collapse" id="#completeNavbar">
-        <ul class="navbar-nav mr-auto list-inline text-right">
-          <li class="nav-item active "><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item "><a class="nav-link" href="about/index.html">About</a></li>
-          <li class="nav-item "><a class="nav-link" href="contact/index.html">Clients</a></li>
-          <li class="nav-item "><a class="nav-link" href="games/index.html">Games</a></li>
-          <li class="nav-item "><a class="nav-link" href="index.html#footer">Contact</a></li>
+      <div class=" collapse navbar-collapse " id="completeNavbar">
+        <ul class="nav nav-list navbar-nav mr-auto list-inline lead">
+          <li class="nav-item active "><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item "><a class="nav-link" href="#clients">Clients</a></li>
+          <li class="nav-item "><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
 
       </div>
     </nav>
     <!-- End Navigation Bar -->
 
-    <i style="font-size: 0.5rem;" class="fas fa-stroopwafel fa-lg"></i>
     <!-- image -->
-    <div class="img-pusher">
+    <div class="img-pusher" id="home">
 
 
       <img class="mx-auto d-block rounded-circle more-buffer fader personalpadding" src="images/headshot.jpg" alt="Zack Mosenson">
@@ -55,7 +54,7 @@
     <!-- End image -->
 
 
-    <h1 class="text-center fancy-text">Zack Mosenson</h1>
+    <h1 class="text-center fancy-text display-2">Zack Mosenson</h1>
 
     <h3 class="text-center">Computer Science Major and Web Developer at Penn State University.</h3>
 
@@ -166,6 +165,40 @@ You're done! -->
     </div>
 
 
+<!-- about section -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class = " text-center text-justify justify-content-center w-40 text-center" id="about" >
+
+
+      <h1 class="display-4">About Me</h1>
+
+      <p class=" personalpadding display-4 w-20 text-justify text-center">I'm Zack Mosenson, a sophomore attending Pennsylvania
+        State University, studying computer science. I'm an active member
+        in the Association for Computing Machinery (ACM), an international
+        society that provides students an advanced opportunity to enhance their
+        programming and teambuilding skills through competition. I am currently
+        minoring in Security and Risk Analysis, one of the most up and coming fields
+        in the world.
+
+
+
+      </p>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- end about section -->
+
+
   </div> <!-- End Container -->
 
 
@@ -201,19 +234,21 @@ You're done! -->
       });
     }
 
+    var company_array = ["GitHub", "LinkedIn", "Facebook", "Instagram", "Twitter", "SoundCloud", "Resume"];
+
+    var navbar_array = ["home", "about", "clients", "contact"];
     $(document).ready(function() {
       fade(".fader", 200);
 
 
-      hovertext(".hover-github", "GitHub");
-      hovertext(".hover-linkedin", "LinkedIn");
-      hovertext(".hover-facebook", "Facebook");
-      hovertext(".hover-instagram", "Instagram");
-      hovertext(".hover-twitter", "Twitter");
-      hovertext(".hover-soundcloud", "SoundCloud");
-      hovertext(".hover-resume", "Resume")
+      for (var x = 0; x < company_array.length; x++){
+        hovertext(".hover-"+company_array[x].toLowerCase(), company_array[x]);
+      }
+
+
     });
   </script>
+
 
 
 
