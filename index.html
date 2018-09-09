@@ -2,16 +2,21 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta lang="en">
   <title>Home</title>
 
 
   <!-- https://zmose.github.io/home/_css/bootstrap.min.css -->
 <!-- online files -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 
   <!-- local files -->
 
@@ -24,16 +29,16 @@
 
 
 <body>
-  <div class="container-fluid" style="background-color:#d8effe;">
-    <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg" style="background-color:#d8effe;">
-      <!-- Button for Nav bar when the page is collapsed -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="completeNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#d8effe;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-icon"></span>
+      </button>
       <div class=" collapse navbar-collapse " id="completeNavbar">
-        <ul class="nav nav-list navbar-nav mr-auto list-inline lead">
+        <ul class="navbar-nav mr-auto lead">
           <li class="nav-item active "><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item "><a class="nav-link" href="#clients">Clients</a></li>
@@ -42,19 +47,25 @@
 
       </div>
     </nav>
+
+
+
     <!-- End Navigation Bar -->
 
     <!-- image -->
-    <div class="img-pusher" id="home">
+    <div id="home">
 
 
-      <img class="mx-auto d-block rounded-circle more-buffer fader personalpadding" src="images/headshot.jpg" alt="Zack Mosenson">
+    <div class="img-pusher">
+
+
+      <img class="mx-auto d-block rounded-circle fader " src="images/headshot.jpg" alt="Zack Mosenson">
 
     </div>
     <!-- End image -->
 
 
-    <h1 class="text-center fancy-text display-2">Zack Mosenson</h1>
+    <h1 class="text-center fancy-text display-4">Zack Mosenson</h1>
 
     <h3 class="text-center">Computer Science Major and Web Developer at Penn State University.</h3>
 
@@ -144,7 +155,7 @@ You're done! -->
     </div>     <!-- End list  -->
 
 <!-- Text Reader -->
-        <div class="text-center">
+        <div class="text-center personalpadding">
           <h5 class="textread"></h5>
 
         </div>
@@ -158,23 +169,24 @@ You're done! -->
 
 
 
-
-
-    <div class="personal-expand">
-
     </div>
 
 
+
+
+
+
 <!-- about section -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 
     <div class = " text-center text-justify justify-content-center w-40 text-center" id="about" >
 
 
-      <h1 class="display-4">About Me</h1>
 
-      <p class=" personalpadding display-4 w-20 text-justify text-center">I'm Zack Mosenson, a sophomore attending Pennsylvania
+      <h1 class="display-4 personalpadding">About Me</h1>
+
+      <h2 class="personalpadding text-justify text-center" style="font-weight: normal;">I'm Zack Mosenson, a sophomore attending Pennsylvania
         State University, studying computer science. I'm an active member
         in the Association for Computing Machinery (ACM), an international
         society that provides students an advanced opportunity to enhance their
@@ -184,7 +196,7 @@ You're done! -->
 
 
 
-      </p>
+      </h2>
 
 
 
@@ -301,7 +313,6 @@ You're done! -->
 
 
 
-  </div>
 </body>
 
 </html>

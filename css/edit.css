@@ -1,3 +1,7 @@
+html {
+  font-size:100%;
+}
+
 body{
   padding-top:50px;
 }
@@ -42,4 +46,14 @@ body{
 
 .grow:hover{
   transform: scale(1.2);
+}
+
+/* #d8effe */
+
+#home {
+  background-image: linear-gradient(to bottom, #d8effe , pink);
+}
+
+#about {
+  background-image: linear-gradient(to bottom, pink , #d8effe);
 }
