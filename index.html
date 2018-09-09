@@ -31,13 +31,13 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#d8effe;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color:#55515b;">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#completeNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-icon"></span>
       </button>
-      <div class=" collapse navbar-collapse " id="completeNavbar">
+      <div class=" collapse navbar-collapse " id="completeNavbar" >
         <ul class="navbar-nav mr-auto lead">
           <li class="nav-item active "><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
@@ -47,9 +47,6 @@
 
       </div>
     </nav>
-
-
-
     <!-- End Navigation Bar -->
 
     <!-- image -->
@@ -68,12 +65,6 @@
     <h1 class="text-center fancy-text display-4">Zack Mosenson</h1>
 
     <h3 class="text-center">Computer Science Major and Web Developer at Penn State University.</h3>
-
-
-
-
-
-
 
     <!-- Start link list -->
 
@@ -157,36 +148,17 @@ You're done! -->
 <!-- Text Reader -->
         <div class="text-center personalpadding">
           <h5 class="textread"></h5>
-
         </div>
         <!-- end text reader -->
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
 <!-- about section -->
-
-
-
     <div class = " text-center text-justify justify-content-center w-40 text-center" id="about" >
 
 
 
       <h1 class="display-4 personalpadding">About Me</h1>
 
-      <h2 class="personalpadding text-justify text-center" style="font-weight: normal;">I'm Zack Mosenson, a sophomore attending Pennsylvania
+      <h2 class="personalpadding text-justify text-center sizing60" style="font-weight: normal;">I'm Zack Mosenson, a sophomore attending Pennsylvania
         State University, studying computer science. I'm an active member
         in the Association for Computing Machinery (ACM), an international
         society that provides students an advanced opportunity to enhance their
@@ -283,27 +255,61 @@ You're done! -->
 
 
   <script>
+
+  //fade function
     function fade(selector, time) {
+      $(selector).animate({
+        "opacity": 0,
+
+      }, 0);
       $(selector).delay(time).animate({
-        "opacity": 1
+        "opacity": 1,
+
       }, 700);
     }
 
+    // hovertext function for FA elements
     function hovertext(icon, name) {
       $(icon).hover(function() {
         $(".textread").replaceWith("<h5 class='textread'>" + name + "</h5>");
-      });
+        $(".textread").hide().fadeIn("medium");
+      },
+        function(){
+          $(".textread").replaceWith("<h5 class='textread'></h5>");
+        });
     }
+
+    function scrollToHeading(heading){
+      $(".nav-link").click(function(){
+      $('body').animate({
+        scrollTop: $("#" + heading).offset().top
+    }, 'slow');
+  });
+  }
 
     var company_array = ["GitHub", "LinkedIn", "Facebook", "Instagram", "Twitter", "SoundCloud", "Resume"];
 
     var navbar_array = ["home", "about", "clients", "contact"];
+
+
+
+    // main
     $(document).ready(function() {
       fade(".fader", 200);
 
 
       for (var x = 0; x < company_array.length; x++){
+        var timer = 500;
+        fade(".hover-"+company_array[x].toLowerCase(), timer + x*200);
+      }
+
+
+      for (var x = 0; x < company_array.length; x++){
         hovertext(".hover-"+company_array[x].toLowerCase(), company_array[x]);
+      }
+
+      for(var x = 0; x < navbar_array.length; x++){
+        scrollToHeading(navbar_array[x]);
       }
 
 

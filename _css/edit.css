@@ -1,7 +1,3 @@
-html{
-  background-color: #55515b;
-}
-
 body{
   padding-top:50px;
 }
@@ -9,7 +5,9 @@ body{
   border-top:150px;
 }
 
-
+.fader{
+  opacity: 0;
+}
 
 .links {
   position: relative;
@@ -24,7 +22,7 @@ body{
 }
 
 .img-pusher{
-  padding-top:50px;
+  padding-top:150px;
 }
 
 .personal-expand{
@@ -44,30 +42,4 @@ body{
 
 .grow:hover{
   transform: scale(1.2);
-}
-
-/* #d8effe */
-
-#home {
-  background-color: rgb(7, 142, 47);
-  color: white;
-}
-
-#about {
-  background-color: #55515b;
-  color: white;
-}
-
-.sizing60 {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.fa{
-  color: white;
-}
-
-
-.textread{
-  height: 24px;
 }
