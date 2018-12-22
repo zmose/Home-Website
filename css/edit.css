@@ -53,6 +53,15 @@ body{
   color: white;
 }
 
+#blogfrontpage {
+  background-color: rgb(54, 134, 94);
+  color: white;
+}
+
+#blogfrontpage a {
+  color: blue;
+}
+
 #about {
   background-color: #55515b;
   color: white;
