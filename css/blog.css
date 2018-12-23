@@ -1,7 +1,11 @@
 body{
   padding: 150px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 #blogbody{
   padding: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
