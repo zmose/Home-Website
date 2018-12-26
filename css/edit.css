@@ -4,6 +4,8 @@ html{
 
 body{
   padding-top:50px;
+  width: 80%;
+  margin: auto;
 }
 .more-buffer{
   border-top:150px;
@@ -20,7 +22,7 @@ body{
 }
 
 .personalpadding{
-  padding:50px;
+  background-color: rgb(54, 134, 94);
 }
 
 .img-pusher{
@@ -35,7 +37,7 @@ body{
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgb(54, 134, 94);
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
@@ -63,7 +65,7 @@ body{
 }
 
 #about {
-  background-color: #55515b;
+  background-color: rgb(54, 134, 94);
   color: white;
 }
 
@@ -79,4 +81,5 @@ body{
 
 .textread{
   height: 24px;
+  background-color: rgb(54, 134, 94);
 }
