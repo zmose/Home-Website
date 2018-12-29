@@ -48,7 +48,12 @@
       <ul class="navbar-nav mr-auto lead">
         <li class="nav-item active "><a class="nav-link" href="../index.html">Home</a></li>
         <li class="nav-item "><a class="nav-link" href="../index.html#about">About</a></li>
-        <li class="nav-item "><a class="nav-link" href="blog/index.html">Blog</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="blog/index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="index.html">Most Recent Blog</a>
+                    <a class="dropdown-item" href="appendix.html">Blog Appendix</a>
+                  </div>
+        </li>
         <li class="nav-item "><a class="nav-link" href="../index.html#contact">Contact</a></li>
       </ul>
 
@@ -116,7 +121,30 @@
     </div>
 
   </div>
+  <br><br>
+  <!-- Next blog/previous blog -->
 
+  <div class="container-fluid">
+    <div class="row">
+      <a href="appendix.html" class="col-sm text-center border" id="changepage">
+
+        No Previous Blogs
+
+
+      </a>
+      <a href="index.html" class="col-sm text-center border" id="changepage">
+
+        No Next Blogs
+
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <br><br><br>
 </body>
+
 
 </html>

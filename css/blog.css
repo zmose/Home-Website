@@ -18,3 +18,13 @@ and (max-device-width : 480px) {
   width: 100%;
 /* Styles */
 }
+
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+#changepage:hover{
+  background-color: rgb(175, 172, 177);
+}

@@ -83,3 +83,7 @@ body{
   height: 24px;
   background-color: rgb(54, 134, 94);
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
