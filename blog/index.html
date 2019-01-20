@@ -64,49 +64,73 @@
 <br><br><br><br>
 
   <div id="blogpost">
-    <h2>Zack's no good, awful, unproductive two weeks</h2>
-    <h4>January 13th, 2019</h4>
+    <h2>Hop, Skip, and a Jump into the Semester</h2>
+    <h4>January 20th, 2019</h4>
 
 <br><br><br><br>
 
     <div id="blogbody">
-      <p>... Well, it only took 3 weeks, but I did it. I had an entire two weeks with
-       essentially no progress towards my projects and my goals. What the
-        hell happened? I can explain...</p>
+      <p>What an interesting week, to say the least. There are lots of projects that I was able to
+      work on with others. This has been quite interesting. </p>
 
-        <h5>Where were you last week?</h5>
+      <h5>What's new this week?</h5>
 
-        <p>I was, uh, busy. As I mentioned before in my previous post,
-           I was away on my little mini vacation, away from laptops and
-          testing environments and text editors. I came back from my
-         vacation on Wednesday, January 2nd. The 2nd was a wash, I
-      wasn't really able to do anything. And after that, the 3rd,
-         4th, and 5th... well... the motivation was simply not
-          there. So instead of showing my shame and creating a
-           blog post on the 6th, I decided to hide and cower.
-            For another week. The only excuse I really have for
-             not doing ANYTHING from the 7th to the 12th is just
-              the fact that I was getting acclimated to my classes
-               during syllabus week. Which is a poor excuse, because if you can't
-               get any work done during the easiest week of the year, how can you
-               expect to get any work done for the rest of the semester. In short,
-               this project (all projects, for that matter), were put on hold. </p>
+      <p>Well this week started with Sunday's DevPSU Startup meeting. I was finally able to meet my group,
+      get to know each other, learn about our strengths and weaknesses, and get started on the project.
+      Right now, we're still in the planning phase of the project, but it looks to be like a lot of fun. We
+      are going to be working on a project towards the <a href = "https://www.nittanyai.psu.edu/challenge">Nittany
+      AI challenge</a>, a 12-week project that includes developing a project that may be used by the University
+      that uses some form of artificial intelligence. </p>
 
-      <p>I actually talked to a friend of mine about this blog project during that time, and he suggested moving away from Github-Pages and instead hosting on a WordPress server (which 99% is really hosted by BlueHost, good stuff by them). So I did a little bit of research, and... no. No, no, no. First of all, I'm concerned about <a href="https://www.ceos3c.com/hacking/how-to-hack-a-wordpress-website/">security issues</a>. Even though I wouldn't really know how to avoid the pitfalls of a securing a public server hosted God knows where, I feel as though I don't have full control of optimizing my site to what I want. Plus in the few <a href="https://www.smashingmagazine.com/2013/05/migrate-existing-website-to-wordpress/">"how to migrate a static website to a WordPress CMS"</a>   tutorials I've seen, I don't think that's the route that I want to take. </p>
+    <p>To prepare for this, I'm actually reading <a href = "https://www.manning.com/books/deep-learning-with-python">
+      Francois Chollet's <i>Deep Learning with Python</i></a>, a rather light book that primarily focuses on
+      Tensorflow's <a href = "https://www.tensorflow.org/guide/keras"> Keras</a> API. It's also helping me learn
+      more and more about deep learning that I would have never learned before. This book is really allowing
+      me build confidence to be able to compete in the Nittany AI challenge. I really meant to learn some
+      form of machine learning, and I'm glad I can work with the big boys and develop intricate neural networks
+      necessary for our DevPSU project. </p>
 
-      <p>And why migrate? To make it easier? To not have Atom explode my CPU every time it opens because it thinks that blog posts are actually articulate lines of code? (I need to make the transition to VSCode anyway soon due to Atom's disappointing performance issues in 2018. But I have like 40 packages, 30 of which I probably take for granted during my daily use of the text editor. Why can't I have anything nice?) No.</p>
+      <p>If you read last week's blog, you know that I was actually looking to create some type of CMS and push
+        this website that you are reading away from Github-Pages and to my <a href = "https://www.raspberrypi.org/">
+        Raspberry Pi 3</a> so that I could both organize my blogs and have readers create profiles. Well,
+        we ran into a couple of snags. The first being that it's actually not allowed.
+      </p>
 
-      <p>So, I'm gonna make my own damn Content Management System. I'm gonna migrate my static pages to a Raspberry Pi 3 under by bunk bed in my dorm that's connected to the school's ethernet, I'll rock the LAMP stack (Linux - the OS, Apache2 - the HTTP server 'software', MySQL - Oracle's way of how to organize 'things' in a DB, PHP - the server side language) on it, I'll brush up on my PHP, and I'll go from there. There's a bit of a 'caveman discovering fire' vibe here, where I know I'm up to something that'll be good for my future, but I really don't know what I'm doing or how to go around maximizing the use of the project. But, unlike the neanderthals of my past, I have Google, so the project shouldn't take thousands of years of evolution to bear the fruits of success. </p>
+      <p>It all started on Thursday. I spent pretty much most of the week either reading <i>Deep Learning</i>
+      or re-teaching myself PHP and how to use it in conjunction with MySQL. It didn't occur to me that the
+      process of running an Apache Server on a Raspberry Pi over Penn State's ethernet was more complicated
+      than I thought. I usually just worked in my dorm and tinkered with PHP from my dorm on a local server.
+      No one could access it unless they were on the Penn State Wi-Fi. I didn't realize this was a problem
+      until I attempted to SSH into the Pi from Willard, a half mile from my dorm.
+      </p>
 
-      <h5>Relax... what stuff have you done beyond the text editor?</h5>
+      <p> And that's where I learned that I probably wasn't going to be able to move this site to my own server.
+      Turns out that you need a few things to be able to do so. First, you need a static external IP address to
+      access the server outside the local network. You can only obtain these by asking your Internet Service
+      Provider. Obviously, I don't have contact with Penn State's ISP, and I seriously doubt that even if I did,
+      I would be allowed to run a web server out of my dorm room. Second, I would need to keep the Pi plugged in,
+      forever, and pray that the power NEVER goes out. This is because Penn State somewhat scrambles IP addresses
+      like a VPN. Power goes out, lose the static external IP address. At least that's my theory. </p>
 
-      <p>Well, I applied to a few things, and I was offered a few things. Being a sophomore looking for an internship is pretty tough. I have the experience, I have the pedigree, and I have the drive (just don't look at my last 2 weeks of productivity), but nobody wants me because I'm not a junior. I can think of 20 companies that I met with at job fairs in which the recruiter took my resume and didn't make it past the 4th line and said "Graduating in 2021? Sorry, we're looking for juniors". I feel like <a href="https://www.youtube.com/watch?v=3tav3bI4M6I">Anakin</a> when he gets denied the rank of Jedi Master. 'It's outrageous, it's unfair'. </p>
+      <p> Another solution is to make a carbon copy of the site and put it on my <a href = "https://sites.psu.edu/zackmosenson/">
+      Penn State site that I never use.</a> But the worst part? It's powered by Wordpress. So, I could have that
+      redirect to my domain name, but I'm just not sure that I want to attempt to copy and paste files all day.
+      This definitely seems like a last resort plan. But hey, if this ain't broke, I won't fix it.</p>
 
-      <p>Okay, no more complaining, you're right. I shouldn't complain when I'm given the opportunity to attend a great University, doing the thing I love the most, and get the chance to work with the brilliant minds of tomorrow, blah blah blah. But isn't the whole point of a personal blog to bitch and moan? Some blogs talk about the weather, some talk about politics, some talk about how their name was misspelled on plastic Starbucks coffee mugs. Me? I choose to complain about the opportunities that I don't get, rather than focusing on the opportunities that I have been given.</p>
+      <h5> So what are you doing this week?</h5>
 
-      <p>Oh! Speaking of opportunities that I have been given, I've been given an opportunity! A group of students have given the opportunity to work on a startup with <a href="http://acm.psu.edu/?p=devpsu">DevPSU</a> ! I can't say too much about the subject, but right now it looks like it'll help future students pick a roommate. So, that's great! I can't wait to finally work with a group. It feels like all I do are projects by myself, but to get the chance to work with other people and see how they tick is truly fascinating. </p>
+      <p> Tonight, I'm going to another DevPSU meeting. I also meet with my group on Thursdays, so that's very exciting.
+      I'm glad that the project is finally getting off the ground. The DevPSU guys are really great. I really don't
+      think I've worked on too many 'group projects', so this would be a breath of fresh air in terms of work flow.
+      We're actually using <a href = "https://trello.com">Trello</a> to manage our work flow. Things look great so far.
+      </p>
 
-      <p>So, I think that's it for now. I hope my productivity is a little better this week. I have a feeling this will be a good week. </p>
+      <p> Other than that, I'm just going to keep reading my book. I'm not too too far into it, but I am enjoying it.
+      What can I say? It's the middle of the semester. I'm here to go to school. If I come across a project, or if I
+      get inspired by something, I'll do it. Until next time. </p>
+
+
+
 
 
       <p>Thanks -- Zack</p>
@@ -123,7 +147,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <a href="b12-29-18.html" class="col-sm text-center border" id="changepage">
+      <a href="b1-13-19.html" class="col-sm text-center border" id="changepage">
 
         Previous Blog
 
